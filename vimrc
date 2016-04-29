@@ -1,4 +1,4 @@
-set number                                                                  
+inoremap jk <Esc>
 set tabstop=2
 set shiftwidth=2
 set smarttab
