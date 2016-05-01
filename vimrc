@@ -8,3 +8,14 @@ set expandtab
 set ignorecase
 set incsearch
 set hlsearch
+
+nnoremap <C-K> :call HighlightNearCursor()<CR>
+function HighlightNearCursor()
+  if !exists("s:highlightcursor")
+    match Todo /\k*\%#\k*/
+    let s:highlightcursor=1
+  else
+    match None
+    unlet s:highlightcursor
+  endif
+endfunction
