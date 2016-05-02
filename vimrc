@@ -1,3 +1,4 @@
+execute pathogen#infect()
 inoremap jk <Esc>
 set laststatus=2
 set tabstop=2
@@ -19,3 +20,7 @@ function HighlightNearCursor()
     unlet s:highlightcursor
   endif
 endfunction
+
+nnoremap tl :tabnext<CR>
+nnoremap th :tabprev<CR>
+nnoremap tn :tabnew<CR>
