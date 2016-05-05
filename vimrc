@@ -1,5 +1,5 @@
 execute pathogen#infect()
-inoremap jk <Esc>
+inoremap jj <Esc>
 set laststatus=2
 set tabstop=2
 set shiftwidth=2
@@ -24,3 +24,5 @@ endfunction
 nnoremap tl :tabnext<CR>
 nnoremap th :tabprev<CR>
 nnoremap tn :tabnew<CR>
+
+autocmd FileType c,cpp,javascript,python,ruby,html,yaml autocmd BufWritePre <buffer> StripWhitespace
