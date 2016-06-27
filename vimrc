@@ -17,6 +17,10 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
 nnoremap <C-K> :call HighlightNearCursor()<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 function HighlightNearCursor()
   if !exists("s:highlightcursor")
     match Todo /\k*\%#\k*/
