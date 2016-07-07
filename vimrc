@@ -16,20 +16,10 @@ filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
-nnoremap <C-K> :call HighlightNearCursor()<CR>
+nnoremap <C-K> <C-W><C-K>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-function HighlightNearCursor()
-  if !exists("s:highlightcursor")
-    match Todo /\k*\%#\k*/
-    let s:highlightcursor=1
-  else
-    match None
-    unlet s:highlightcursor
-  endif
-endfunction
 
 nnoremap tl :tabnext<CR>
 nnoremap th :tabprev<CR>
@@ -51,3 +41,9 @@ map <Leader>a :call RunAllSpecs()<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+
+" vim-test
+let test#strategy = 'vimux'
+
+" vimux
+let g:VimuxOrientation = 'h'
