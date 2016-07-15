@@ -1,5 +1,6 @@
 execute pathogen#infect()
 inoremap jj <Esc>
+set number
 set laststatus=2
 set tabstop=2
 set shiftwidth=2
