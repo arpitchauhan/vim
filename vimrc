@@ -115,6 +115,3 @@ let g:ctrlp_working_path_mode = 'ra'
 
 " vim-test
 let test#strategy = 'vimux'
-
-" vimux
-let g:VimuxOrientation = 'h'
