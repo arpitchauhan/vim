@@ -1,4 +1,5 @@
 execute pathogen#infect()
+set mouse=a
 inoremap jj <Esc>
 set number
 set laststatus=2
