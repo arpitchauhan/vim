@@ -80,10 +80,6 @@ if !empty(&viminfo)
 endif
 set sessionoptions-=options
 
-if &t_Co == 8 && $TERM !~# '^linux\|^Eterm'
-  set t_Co=16
-endif
-
 if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
   ''
   runtime! macros/matchit.vim
